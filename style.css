@@ -1,0 +1,72 @@
+/* global reset  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- ♡ ---------- */
+
+/* variaveis  */
+
+:root {
+    /* cores principais (sem alteraçoes) */
+    --bege: #EDE8D0;
+    --marrom: #453125;
+    --laranja: #BE6220;
+    --text-white: #fff;
+    --text-black: #000;
+
+    /* cores principais (alteradas) */
+    --nav-bg: rgba(0, 0, 0, 0.8);
+    --text-black-low-emph: rgba(0, 0, 0, 0.7);
+    --text-white-low-emph: rgba(255, 255, 255, 0.7);
+    --footer-bege: rgba(237, 232, 208, 1);
+}
+
+/* ---------- ♡ ---------- */
+/* config fontes  */
+@font-face {
+    font-family: 'titles';
+    src: url('./fonts/JetBrainsMono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* titulos  */
+
+@font-face {
+    font-family: 'main';
+    src: url('./fonts/Montserrat.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* corpo de texto */
+
+/* ---------- ♡ ---------- */
+
+/*  estilos por tag  */
+
+body {
+    background-color: var(--bege);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'titles', monospace;
+}
+
+p {
+    font-family: 'main', sans-serif;
+}
+
+button {
+    background-color: var(--laranja);
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    color: var(--text-white);
+}
