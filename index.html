@@ -28,107 +28,119 @@
     <main>
 
         <!-- HERO  -->
-        <section class="hero">
-            <img src="assets/navhero/bgimg.png" alt="">
-            <h1>Onde o código compila e o café desperta</h1>
-            <p>
-                O primeiro co-working tech com infraestrutura de alta performance, cadeiras ergonômicas e grãos
-                selecionados. O habitat perfeito para o seu próximo deploy.
-            </p>
+        <section id="hero">
+            <div class="container">
+                <div class="hero_content">
+                    <span id="hero_title">
+                        Onde o código compila e o café desperta
+                    </span>
+                    <p>
+                        O primeiro co-working tech com infraestrutura de alta performance, cadeiras ergonômicas e grãos
+                        selecionados. O habitat perfeito para o seu próximo deploy.
+                    </p>
 
-            <button>Reservar minha mesa</button>
-            <button id="ver_cardapio">Ver cardápio</button>
-            <span>
-                <img src="assets/navhero/setinhas_icon.svg" alt="">
-            </span>
+                </div>
+                <br>
+                <div class="botoes">
+                    <button>Reservar minha mesa</button>
+                    <button id="ver_cardapio">Ver cardápio</button>
+                </div>
+                <span id="setinhas">
+                    <img src="assets/navhero/setinhas_icon.svg" alt="">
+                </span>
+            </div>
         </section>
 
         <!-- CARDAPIO  -->
         <section id="cardapio">
+
             <div class="waves">
                 <img src="assets/cardapio/1st_wave.svg" alt="">
             </div>
-            <h1>Confira os queridinhos do nosso cardápio</h1>
-            <div id="cappuccinos">
-                <h2>Variações (Cappuccinos)</h2>
-                <img class="cardapio_img" src="assets/cardapio/cappuccino.png" alt="Foto de um cappuccino">
+            <div class="container">
+                <h1>Confira os queridinhos do nosso cardápio</h1>
+                <div id="cappuccinos">
+                    <h2>Variações (Cappuccinos)</h2>
+                    <img class="cardapio_img" src="assets/cardapio/cappuccino.png" alt="Foto de um cappuccino">
 
-                <div class="descricao_cardapio">
-                    <h3>WEB</h3>
+                    <div class="descricao_cardapio">
+                        <h3>WEB</h3>
 
-                    <div class="item_linha">
-                        <p>Clássico com canela e chocolate</p>
-                        <span>R$14,00</span>
-                    </div>
+                        <div class="item_linha">
+                            <p>Clássico com canela e chocolate</p>
+                            <span>R$14,00</span>
+                        </div>
 
-                    <h3>OVERCLOCK</h3>
-                    <div class="item_linha">
-                        <p>Shop duplo para alta performance</p>
-                        <span>R$18,00</span>
-                    </div>
+                        <h3>OVERCLOCK</h3>
+                        <div class="item_linha">
+                            <p>Shop duplo para alta performance</p>
+                            <span>R$18,00</span>
+                        </div>
 
-                    <h3>CLOUD</h3>
-                    <div class="item_linha">
-                        <p>Leite vaporizado extra cremoso</p>
-                        <span>R$16,00</span>
-                    </div>
-                </div>
-            </div>
-
-            <div id="cafes">
-                <h2>Builds (Cafés)</h2>
-                <img class="cardapio_img" src="assets/cardapio/café.png " alt="Foto de um cappuccino">
-
-                <div class="descricao_cardapio">
-                    <h3>THE ROOT</h3>
-
-                    <div class="item_linha">
-                        <p>Espresso clássico e intenso</p>
-                        <span>R$9,00</span>
-                    </div>
-
-                    <h3>LONG RUN</h3>
-                    <div class="item_linha">
-                        <p>Americano suave e equilibrado</p>
-                        <span>R$11,00</span>
-                    </div>
-
-                    <h3>BATCH PROCESS</h3>
-                    <div class="item_linha">
-                        <p>Café na prensa (500ml), ideal para compartilhar</p>
-                        <span>R$16,00</span>
+                        <h3>CLOUD</h3>
+                        <div class="item_linha">
+                            <p>Leite vaporizado extra cremoso</p>
+                            <span>R$16,00</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div id="comidas">
-                <h2>Assets (Comidas)</h2>
-                <img class="cardapio_img" src="assets/cardapio/croissant.png" alt="Foto de um cappuccino">
+                <div id="cafes">
+                    <h2>Builds (Cafés)</h2>
+                    <img class="cardapio_img" src="assets/cardapio/café.png " alt="Foto de um cappuccino">
 
-                <div class="descricao_cardapio">
-                    <h3>FULL OPTION</h3>
+                    <div class="descricao_cardapio">
+                        <h3>THE ROOT</h3>
 
-                    <div class="item_linha">
-                        <p>Croissant recheado (doce ou salgado)</p>
-                        <span>R$18,00</span>
-                    </div>
+                        <div class="item_linha">
+                            <p>Espresso clássico e intenso</p>
+                            <span>R$9,00</span>
+                        </div>
 
-                    <h3>INTERNO</h3>
-                    <div class="item_linha">
-                        <p>Porção de pão de queijo</p>
-                        <span>R$10,00</span>
-                    </div>
+                        <h3>LONG RUN</h3>
+                        <div class="item_linha">
+                            <p>Americano suave e equilibrado</p>
+                            <span>R$11,00</span>
+                        </div>
 
-                    <h3>SWEET BUG</h3>
-                    <div class="item_linha">
-                        <p>Muffin de chocolate premium</p>
-                        <span>R$14,00</span>
+                        <h3>BATCH PROCESS(500ml)</h3>
+                        <!-- nao dei espaço na palavra pro parenteses porque no css tem um letter-spacing -->
+                        <div class="item_linha">
+                            <p>Café na prensa, ideal para compartilhar</p>
+                            <span id="batch">R$16,00</span>
+                        </div>
                     </div>
                 </div>
+
+                <div id="comidas">
+                    <h2>Assets (Comidas)</h2>
+                    <img class="cardapio_img" src="assets/cardapio/croissant.png" alt="Foto de um cappuccino">
+
+                    <div class="descricao_cardapio">
+                        <h3>FULL OPTION</h3>
+
+                        <div class="item_linha">
+                            <p>Croissant recheado (doce ou salgado)</p>
+                            <span>R$18,00</span>
+                        </div>
+
+                        <h3>INTERNO</h3>
+                        <div class="item_linha">
+                            <p>Porção de pão de queijo</p>
+                            <span>R$10,00</span>
+                        </div>
+
+                        <h3>SWEET BUG</h3>
+                        <div class="item_linha">
+                            <p>Muffin de chocolate premium</p>
+                            <span>R$14,00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button>Confira o cardápio completo</button>
+
             </div>
-
-            <button>confira o cardápio completo</button>
-
             <div class="waves">
                 <img src="assets/cardapio/2nd_wave.svg" alt="">
             </div>
@@ -137,126 +149,169 @@
 
         <!-- TEMOS  -->
         <section id="temos">
-            <h1>AQUI TAMBÉM TEMOS</h1>
-            <div>
-                <img src="assets/temos_tambem/wifi.svg" alt="ícone de cor bege de um wi-fi">
-                <span>Múltiplos Wi-fi</span>
-            </div>
-            <div>
-                <img src="assets/temos_tambem/tomada.svg" alt="ícone de cor bege de uma tomada">
-                <span>Tomadas Universais</span>
-            </div>
-            <div>
-                <img src="assets/temos_tambem/chair_temos.svg" alt="ícone de cor bege de uma cadeira de escritório">
-                <span>Cadeiras Ergonômicas</span>
+            <div class="container">
+                <h1>Aqui também temos</h1>
+                <div>
+                    <img src="assets/temos_tambem/wifi.svg" alt="ícone de cor bege de um wi-fi">
+                    <span>Múltiplos Wi-fi</span>
+                </div>
+                <div>
+                    <img src="assets/temos_tambem/tomada.svg" alt="ícone de cor bege de uma tomada">
+                    <span>Tomadas Universais</span>
+                </div>
+                <div>
+                    <img src="assets/temos_tambem/chair_temos.svg" alt="ícone de cor bege de uma cadeira de escritório">
+                    <span>Cadeiras Ergonômicas</span>
+                </div>
             </div>
         </section>
         <!-- ---------- ♡ ---------- -->
 
-        <section class="reserva">
+        <!-- RESERVA  -->
+        <section id="reserva">
             <div class="waves">
                 <img src="assets/reserva/3nd_wave.svg" alt="onda">
             </div>
-            <div class="aindanaosei">
+            <div class="container">
                 <h2>RESERVE SUA MESA</h2>
-                <div class="input_container">
-                    <!-- icone  -->
-                    <img src="assets/reserva/user_icon.svg" alt="ícone de usuário" class="input-icon">
-                    <!-- input -->
-                    <input type="text" placeholder="Nome">
-                </div>
+                <div class="campos">
 
-                <div class="input_container">
-                    <!-- icone  -->
-                    <img src="assets/reserva/calendar_icon.svg" alt="ícone de calendário">
-                    <!-- input  -->
-                    <input type="date">
-                </div>
 
-                <div class="input_container">
-                    <!-- icone  -->
-                    <img src="assets/reserva/chair_icon.svg" alt="ícone de uma cadeira">
-                    <!-- input  -->
-                    <select name="mesa" id="mesa">
-                        <option value="" disabled selected>Selecione uma mesa</option>
-                        <option value="mesa-1">Mesa 01 (Janela)</option>
-                        <option value="mesa-2">Mesa 02 (interna)</option>
-                        <option value="mesa-3">Mesa 03 (Sofá)</option>
-                        <option value="mesa-4">Mesa 04 (Balcão)</option>
-                        <option value="Outra">Vou escolher presencialmente</option>
-                    </select>
-                </div>
-                <button type="submit">Reservar minha mesa</button>
+                    <!-- NOME 👩🏻 -->
+                    <div class="input_container">
+                        <!-- icone  -->
+                        <img class="input_icons" src="assets/reserva/user_icon.svg" alt="ícone de usuário"
+                            class="input-icon">
+                        <!-- input -->
+                        <input type="text" placeholder="Nome">
+                    </div>
 
-                <img src="assets/reserva/reservabg.png" alt="">
+                    <!-- EMAIL 📩 -->
+                    <div class="input_container">
+                        <!-- icone  -->
+                        <img class="input_icons" src="assets/reserva/mail_icon.svg" alt="">
+                        <!-- input  -->
+                        <input type="email" name="mail" id="mail" placeholder="E-mail">
+                    </div>
+
+                    <!-- DUPLINHA  -->
+                    <div class="duplinha">
+                        <!-- DATA 📅 -->
+                        <div class="input_container">
+                            <!-- icone  -->
+                            <img class="input_icons" src="assets/reserva/calendar_icon.svg" alt="ícone de calendário">
+                            <!-- input  -->
+                            <input type="date" id="data">
+                        </div>
+
+                        <!-- MESA 🪑 -->
+                        <div class="input_container">
+                            <!-- icone  -->
+                            <img class="input_icons" src="assets/reserva/chair_icon.svg" alt="ícone de uma cadeira">
+                            <!-- input  -->
+                            <select name="mesa" id="mesa">
+                                <option value="" disabled selected>Selecione...</option>
+                                <option value="mesa-1">Mesa 01 (Janela)</option>
+                                <option value="mesa-2">Mesa 02 (interna)</option>
+                                <option value="mesa-3">Mesa 03 (Sofá)</option>
+                                <option value="mesa-4">Mesa 04 (Balcão)</option>
+                                <option value="Outra">Vou escolher presencialmente</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- MENSAGEM 📝 -->
+                    <div class="input_container">
+                        <!-- icone  -->
+                        <img style="align-self: flex-start;" class="input_icons" src="assets/reserva/message_icon.svg"
+                            alt="">
+                        <!-- mensagem  -->
+                        <textarea name="mensagem" id="mensagem" placeholder="Deixe sua mensagem (Opcional)"></textarea>
+                    </div>
+                    <button type="submit">Reservar minha mesa</button>
+
+                    <img id="reserva_img" src="assets/reserva/reservabg.png" alt="">
+                </div>
             </div>
         </section>
+        <!-- ---------- ♡ ---------- -->
+
+        <!-- ENDEREÇO  -->
         <section id="address">
-            <div id="mapa">
+            <div class="container">
+                <div id="mapa">
 
-            </div>
-            <div class="contato">
-                <h3>Endereço</h3>
-                <span>Rua dos Devs, 101 - Bairro Binário, São Paulo - SP</span>
+                </div>
+                <div class="contato">
+                    <h3>Endereço</h3>
+                    <span>Rua dos Devs, 101 - Bairro Binário, São Paulo - SP</span>
 
-                <h3>Horário de Funcionamento</h3>
-                <span>Segunda à Sexta: 08h às 20h</span>
-                <span>Sábado: 09h às 16h</span>
+                    <h3>Horário de Funcionamento</h3>
+                    <span>Segunda à Sexta: 08h às 20h</span>
+                    <span>Sábado: 09h às 16h</span>
 
-                <h3>E-mail & Telefone</h3>
-                <span>contato@coffeebeans.com.br</span>
-                <span>(11) 9999-9999</span>
+                    <h3>E-mail & Telefone</h3>
+                    <span>contato@coffeebeans.com.br</span>
+                    <span>(11) 9999-9999</span>
+                </div>
             </div>
         </section>
+        <!-- ---------- ♡ ---------- -->
     </main>
+
+    <!-- PEZAO  -->
     <footer>
-        <div class="footer_div">
-            <div class="categorias" id="redes">
+        <div class="container">
+            <div class="footer_div">
                 <img src="assets/footer/xicrinha_footer.svg" alt="">
-                <span>
-                    <img src="assets/footer/tiktok_icon.svg" alt="">
-                </span>
+                <div class="categorias" id="redes">
+                    <span>
+                        <img src="assets/footer/tiktok_icon.svg" alt="">
+                    </span>
 
-                <span>
-                    <img src="assets/footer/instagram_icon.svg" alt="">
-                </span>
+                    <span>
+                        <img src="assets/footer/instagram_icon.svg" alt="">
+                    </span>
 
-                <span>
-                    <img src="assets/footer/facebook_icon.svg" alt="">
-                </span>
+                    <span>
+                        <img src="assets/footer/facebook_icon.svg" alt="">
+                    </span>
+                </div>
+
+                <div class="categorias" id="beans">
+                    <h3>Coffee & Beans</h3>
+                    <span>
+                        <a href="">Sobre nós</a>
+                    </span>
+                    <span>
+                        <a href="">Contato</a>
+                    </span>
+                    <span>
+                        <a href="">Equipamentos</a>
+                    </span>
+                    <span>
+                        <a href="">Trabalhe Conosco</a>
+                    </span>
+                </div>
+
+                <div class="categorias" id="ajuda">
+                    <h3>Ajuda</h3>
+                    <span>
+                        <a href="">Política de Privacidade</a>
+                    </span>
+                    <span>
+                        <a href="">Termos de Uso</a>
+                    </span>
+                    <span>
+                        <a href="">F.A.Q</a>
+                    </span>
+                </div>
             </div>
-
-            <div class="categorias" id="beans">
-                <span>
-                    <a href="">Sobre nós</a>
-                </span>
-                <span>
-                    <a href="">Contato</a>
-                </span>
-                <span>
-                    <a href="">Equipamentos</a>
-                </span>
-                <span>
-                    <a href="">Trabalhe Conosco</a>
-                </span>
+            <div id="footer_copyright">
+                © 2026 Coffee & Beans. Desenvolvido por Samara Júlia.
             </div>
-
-            <div class="categorias" id="ajuda">
-                <span>
-                    <a href="">Política de Privacidade</a>
-                </span>
-                <span>
-                    <a href="">Termos de Uso</a>
-                </span>
-                <span>
-                    <a href="">F.A.Q</a>
-                </span>
-            </div>
-        </div>
-        <div class="footer_copyright">
-            © 2026 Coffee & Beans. Desenvolvido por Samara Júlia.
         </div>
     </footer>
+    <!-- ---------- ♡ ---------- -->
 </body>
 
 </html>

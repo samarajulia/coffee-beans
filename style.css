@@ -12,7 +12,7 @@
 
 :root {
     /* cores principais (sem alteraçoes) */
-    --bege: #EDE8D0;
+    --bege: rgba(233, 228, 206, 0.61);
     --marrom: #453125;
     --laranja: #BE6220;
     --text-white: #fff;
@@ -22,16 +22,26 @@
     --nav-bg: rgba(0, 0, 0, 0.8);
     --text-black-low-emph: rgba(0, 0, 0, 0.7);
     --text-white-low-emph: rgba(255, 255, 255, 0.7);
-    --footer-bege: rgba(237, 232, 208, 1);
+    --footer-bege: rgba(233, 228, 206, 1);
 }
 
 /* ---------- ♡ ---------- */
+
+
 /* config fontes  */
 @font-face {
     font-family: 'titles';
     src: url('./fonts/JetBrainsMono.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+/* ---------- ♡ ---------- */
+
+/* removendo o icone padrao de calendario  */
+
+#data::-webkit-calendar-picker-indicator {
+    display: none;
 }
 
 /* titulos  */
@@ -43,7 +53,14 @@
     font-style: normal;
 }
 
-/* corpo de texto */
+/* container com as margens */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
 /* ---------- ♡ ---------- */
 
@@ -55,12 +72,26 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'titles', monospace;
+    letter-spacing: 1px;
 }
 
 p {
     font-family: 'main', sans-serif;
+    font-size: 0.9em;
+}
+
+span {
+    font-family: "main", sans-serif;
+}
+
+a {
+    font-size: 0.8em;
+    font-family: "main", sans-serif;
+    color: var(--text-black-low-emph);
+    text-decoration: none;
 }
 
 button {
@@ -70,3 +101,340 @@ button {
     padding: 12px;
     color: var(--text-white);
 }
+
+/* ! MOBILE FIRST  */
+
+@media screen and (max-width: 500px) {
+
+
+    /* NAV  */
+    header {
+        background-color: var(--text-black-low-emph);
+        padding: 6px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    }
+
+    ul {
+        display: none;
+    }
+
+
+    /* ! HERO  */
+    #hero {
+        color: var(--text-white);
+        height: 100vh;
+        background-image: url(assets/navhero/bgimg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid var(--marrom);
+    }
+
+    .hero_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin-top: 15vh;
+    }
+
+    .hero_content #hero_title {
+        font-family: 'titles', monospace;
+        font-size: 3em;
+    }
+
+    .hero_content p {
+        color: var(--text-white-low-emph);
+    }
+
+    #hero #setinhas {
+        display: flex;
+        justify-content: center;
+        margin-top: 6vh;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        gap: 12px;
+        width: 50%;
+        margin-top: 4vh;
+    }
+
+    .botoes button {
+        border-radius: 6px;
+    }
+
+    .botoes #ver_cardapio {
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid var(--laranja);
+    }
+
+    .waves img {
+        width: 100%;
+        display: block;
+    }
+
+    /* ! CARDAPIO  */
+
+    #cardapio {
+        background-image: url(assets/cardapio/graosimage.png);
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cardapio .container {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    #cardapio .container h2 {
+        margin-bottom: 12px;
+    }
+
+    #cardapio img {
+        width: 100%;
+    }
+
+    #cardapio button {
+        display: flex;
+        margin: 5vh auto;
+    }
+
+    .descricao_cardapio {
+        margin: 12px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .item_linha {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px dotted black;
+    }
+
+    .item_linha p {
+        font-size: 0.8em;
+    }
+
+    .item_linha span {
+        font-size: 0.9em;
+    }
+
+    /* ! TEMOS  */
+
+    #temos .container {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        color: var(--text-white);
+        background-color: var(--marrom);
+    }
+
+    #temos .container h1 {
+        font-family: 'titles', monospace;
+        letter-spacing: 6px;
+    }
+
+
+    #temos .container img {
+        width: 50%;
+        height: auto;
+    }
+
+    #temos .container div {
+        margin-top: 5vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 12px;
+    }
+
+    #temos .container span {
+        font-family: 'main', sans-serif;
+        margin-top: 2vh;
+        padding: 12px;
+    }
+
+
+    /* ! RESERVA */
+
+    #reserva {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #reserva .container {
+        padding-top: 15vh;
+    }
+
+    #reserva .container h2 {
+        margin-bottom: 12vh;
+        text-align: center;
+    }
+
+    .input_icons {
+        vertical-align: middle;
+        width: 25px;
+        height: 25px;
+    }
+
+    .duplinha {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    #mesa,
+    #data,
+    #mensagem {
+        width: 100%;
+        text-align: center;
+        font-family: "main", sans-serif;
+    }
+
+    #mensagem {
+        height: 100px;
+        resize: none;
+        padding-top: 3px;
+    }
+
+    select,
+    textarea {
+        border: none;
+    }
+
+    .campos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .input_container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        border: 1px solid var(--marrom);
+        border-radius: 8px;
+        background-color: white;
+    }
+
+    .input_container input {
+        border: none;
+        background: transparent;
+        outline: none;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    #reserva_img {
+        z-index: -10;
+        position: relative;
+        top: -500px;
+        right: -100px;
+    }
+
+
+    /* ! ENDEREÇO  */
+    #address .container #mapa {
+        background-color: white;
+        border: 1px solid black;
+        width: 100%;
+        height: 50vh;
+    }
+
+    #address .container {
+        padding-top: 15vh;
+        padding-bottom: 15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        gap: 20px;
+    }
+
+    #address .container span {
+        font-size: 0.9em;
+    }
+
+    #address .container .contato {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    /* ! FOOTER  */
+
+    footer {
+        background-color: var(--footer-bege);
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5vh;
+    }
+
+    footer img {
+        width: 50px;
+        margin: auto;
+    }
+
+    .footer_div {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    #redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .categorias {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+
+    #footer_copyright {
+        font-family: "main", sans-serif;
+        font-size: 0.8em;
+        text-align: center;
+        margin-top: 48px;
+    }
+}
+
+/* ! ------------  */
